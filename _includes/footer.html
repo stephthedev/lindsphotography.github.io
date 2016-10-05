@@ -1,0 +1,35 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div id="follow-me" class="col-xs-12 col-sm-6">
+                <div class="row social">
+                    <ul>
+                        <li>
+                            <a href={{ site.data.sitewide.social.facebook }} title="Facebook">
+                                <span class="fa fa-facebook" aria-hidden="true" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href={{ site.data.sitewide.social.instagram }} title="Instagram">
+                                <span class="fa fa-instagram" aria-hidden="true" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ site.data.sitewide.social.twitter }}" title="Twitter">
+                                <span class="fa fa-twitter" aria-hidden="true" />
+                            </a>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+
+        	<div id="copyright" class="col-xs-12 col-sm-6">
+        		<span class="text-muted">
+                	&copy; {{site.data.sitewide.photographer_name}} Photography {{ site.time | date: '%Y' }}
+            	</span>
+                <span>|</span>
+                <span class="text-muted"> All Rights Reserved.</span>
+        	</div>
+        </div>
+    </div>
+</footer>
