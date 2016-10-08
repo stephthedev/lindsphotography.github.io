@@ -75,7 +75,6 @@ body {
 }
 
 .photo-gallery {
-
   .row {
     @media (max-width: $screen-xs-max) {
       text-align: center;
@@ -95,6 +94,10 @@ body {
 
 #profile {
   margin-bottom: 1em;
+}
+
+#contact {
+  margin-top: 2em;
 }
 
 #thank-you {

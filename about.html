@@ -1,18 +1,20 @@
 ---
 layout: default
 about:
-  photo: images/web/IMG_0042.JPG
+  photo: images/web/LGAboutMe35.jpg
   gear: http://www.reviewsbymary.com/wp-content/uploads/2015/06/nikon-cameras-6.jpg
+form:
+  subject: "[Action Requested] New form submission about photography services"
 ---
 
 <div class="container">
 	<h1>About Me</h1>
 	<div class="row">
-		<div class="col-md-4" id="profile">
+		<div class="col-sm-4 hidden-xs" id="profile">
 			<img class="img-responsive img-rounded" src="{{page.about.photo}}" />
 		</div>
 
-		<div class="col-md-8" id="bio">
+		<div class="col-sm-8" id="bio">
 			<p>
 				Hi, I'm Lindsay Garcia and I'm a portrait photographer - I like to take pictures of people. I enjoy working with kids, families, and couples and getting people to feel at ease so I can create art for them. 
 			</p>
@@ -26,8 +28,39 @@ about:
 			</p>
 
 			<p>
-				Please take a look at my <a href="portfolio.html">portfolio</a> and <a href="contact.html">get in touch</a>!
+				Please take a look at my <a href="portfolio.html">portfolio</a> and <a href="#contact-form">get in touch</a>!
 			</p>
+		</div>
+	</div>
+
+	<div class="row" id="contact">
+		<div class="col-md-12">
+			<p>
+				If you'd like to ask questions or hire me, feel free to send me an email
+			</p>
+		 
+			<form id="contact-form" name="contact-form" action="https://formspree.io/{{site.data.sitewide.contact.email}}" method="POST">
+				<input type="hidden" name="_subject" value="{{page.form.subject}}" />
+				<input type="text" name="_gotcha" style="display:none" />
+				<input type="hidden" name="_next" value="thanks.html" />
+
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input id="name" type="text" class="form-control" name="name" placeholder="Name" />
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input id="email" type="text" class="form-control" name="_replyto" placeholder="Email"/>
+				</div>
+
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea rows="10" class="form-control" id="message" name="message"></textarea>
+				</div>
+			    
+			    <button type="submit" class="btn btn-default">Submit</button>
+			</form>
 		</div>
 	</div>
 </div>

@@ -5,104 +5,135 @@ photos:
   -
     name: DSC0056
     ext: .jpg
+    title: Flo's Cafe
   -
     name: DSC0012
     ext: .jpg
+    title: Statue of Liberty
   -
     name: DSC0025
     ext: .jpg
+    title: FDNY Engine 226 Memorial
   -
     name: DSC0033
     ext: .jpg
+    title: Streets of New York
   -
     name: DSC0122
     ext: .jpg
+    title: Beach
   -
     name: DSC0126
     ext: .jpg
+    title: Waves
   -
     name: DSC2259
     ext: .jpg
+    title: Wildlife at the beach
   -
     name: DSC2604
     ext: .jpg
+    title: Sunset at the beach
   
   # Children
   -
     name: DSC0044
     ext: .jpg
+    title: 3 years old birthday
   -
     name: DSC0080
     ext: .jpg
+    title: At the museum
   -
     name: DSC0081
     ext: .jpg
+    title: Infant asleep
   -
     name: DSC0067
     ext: .jpg
+    title: Infant asleep
   -
     name: IMG_0449
     ext: .jpg
+    title: Infant in basket with balloons
   - 
     name: IMG_0491
     ext: .jpg
+    title: Cake with 1 year old
   
   # Models
   -
     name: DSC0062
     ext: .jpg
+    title: Model
   - 
     name: Garcia_42
-    ext: .jpg  
+    ext: .jpg
+    title: Model 2  
   -
     name: DSC2497
     ext: .jpg
+    title: Girl at window sillouette
 
   # Couple/Prom
   -
     name: DSC0053
     ext: .jpg
+    title: Prom couple piggy-back
   -
     name: DSC0055 copy
     ext: .jpg
+    title: Prom couple portrait
 
   # Weddings
   -
     name: DSC0055
     ext: .jpg
+    title: Groom and bride
   -
     name: DSC0059
     ext: .jpg
+    title: Groom and bride 2
   -
     name: DSC0061
     ext: .jpg
+    title: Groom and bride on stairs
   -
     name: DSC0071
     ext: .jpg
+    title: Groom and bride rings
   -
     name: DSC0086
     ext: .jpg
+    title: Groom and bride on stairs 2
   -
     name: DSC0105
     ext: .jpg
+    title: Wedding floral arrangement
   -
     name: DSC0108
     ext: .jpg
+    title: Wedding cake
   - 
     name: Polanco41.1
     ext: .jpg
+    title: Bridge and groom (black and white image)
   -
     name: Polanco42.1
     ext: .jpg
+    title: Bride and groom 2 (black and white image)
   - 
     name: Polanco6.1
     ext: .jpg
+    title: Bride getting ready (black and white image)
   -
     name: Polanco8.1
     ext: .jpg
+    title: Bride putting shoes on (black and white image)
   -
     name: Polanco9.1
     ext: .jpg
+    title: Bride showing off wedding gown (black and white image)
 ---
 <div class="container photo-gallery">
   {% for photo in page.photos %}
@@ -114,9 +145,11 @@ photos:
       	<div class="col-sm-3 photo">
       		<a href="images/web/{{photo.name | append: photo.ext}}" data-lightbox="portfolio"  target="_blank">
   				  <img 
-              class="img-responsive img-thumbnail" 
+              class="img-responsive img-rounded" 
               src="images/thumbnails/{{photo.name | append: '.png'}}" 
-              title="{{ photo.title }}" >
+              width="200"
+              height="200"
+              alt="{{ photo.title }}" >
   			 </a>
   		  </div>
 
