@@ -146,9 +146,7 @@ photos:
       		<a href="images/web/{{photo.name | append: photo.ext}}" data-lightbox="portfolio"  target="_blank">
   				  <img 
               class="img-responsive img-rounded" 
-              src="images/thumbnails/{{photo.name | append: '.png'}}" 
-              width="200"
-              height="200"
+              src="images/thumbnails/{{photo.name | append: photo.ext}}" 
               alt="{{ photo.title }}" >
   			 </a>
   		  </div>
