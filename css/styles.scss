@@ -104,7 +104,17 @@ body {
   padding: 1em;
 }
 
-
 .photo-cover {
-  text-align: center;
+  background-image: url(../images/web/IMG_7864.jpg);
+  background-position: center bottom !important;
+  background-size: cover;
+  
+  min-height: 500px;
+  display: block;
+  width: 100%;
+
+  @media(max-width: $screen-xs-max) {
+    height: 30vh;
+    min-height: 300px;
+  }
 }
