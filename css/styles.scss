@@ -16,6 +16,7 @@ body {
   text-transform: uppercase;
 
   .navbar-brand {
+    margin-top: 0.25em;
     color: black;
     font-size: 3em;
     text-transform: none;
@@ -30,6 +31,8 @@ body {
   }
 
   .navbar-nav {
+    margin-top: 1em;
+    
     a {
       background: transparent; 
       color: black;
