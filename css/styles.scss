@@ -17,7 +17,10 @@ body {
 
   .navbar-brand {
     color: black;
-    font-size: 1.75em;
+    font-size: 3em;
+    text-transform: none;
+    font-family: Tangerine;
+    color: #e0a240;
   }
 
   .fa-bars {
@@ -106,10 +109,11 @@ body {
 
 .photo-cover {
   background-image: url(../images/web/IMG_7864.jpg);
-  background-position: center bottom !important;
+  //background-image: url(../images/web/COVER_OPTION2.jpg);
+  background-position: center center !important;
   background-size: cover;
   
-  min-height: 500px;
+  min-height: 800px;
   display: block;
   width: 100%;
 
