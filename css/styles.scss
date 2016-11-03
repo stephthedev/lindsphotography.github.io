@@ -32,7 +32,7 @@ body {
 
   .navbar-nav {
     margin-top: 1em;
-    
+
     a {
       background: transparent; 
       color: black;
@@ -124,4 +124,10 @@ body {
     height: 30vh;
     min-height: 300px;
   }
+}
+
+#photo-cover-quote {
+  font-family: Tangerine;
+  color: #e0a240;
+  font-size: 2em;
 }
