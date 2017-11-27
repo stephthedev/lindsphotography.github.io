@@ -33,6 +33,7 @@ namespace :contentful do
   	end
   end
 
+  desc "Generate jekyll data from contentful assets"
   task :assets do 
     require 'contentful'
     require 'fileutils'
@@ -57,12 +58,12 @@ namespace :contentful do
     output_dir = "./_data/contentful/spaces/blog/assets"
     FileUtils::mkdir_p(output_dir)
 
-    # Write the post to a blog file
+    # Write the array of images to a single yaml file
     open("#{output_dir}/assets.yaml", 'w') { |f|
       f.puts yaml.to_yaml
     }
   end
 
-  desc 'This rebuilds development db'
+  desc 'Generate blog post content, image content'
   task :all => ["contentful:content", "contentful:process_posts", "contentful:assets"]
 end
