@@ -8,6 +8,10 @@ contentful:
         space: ENV_CONTENTFUL_SPACE_ID         # Required
         access_token: ENV_CONTENTFUL_ACCESS_TOKEN  # Required
         all_entries: true           # Optional - Defaults to false, only grabbing the amount set on CDA Query
-        content_types:              # Optional
-          cat: blogPost
         individual_entry_files: true
+    - images: # Jekyll _data folder identifier - Required
+        space: ENV_CONTENTFUL_SPACE_ID         # Required
+        access_token: ENV_CONTENTFUL_ACCESS_TOKEN  # Required
+        all_entries: true           # Optional - Defaults to false, only grabbing the amount set on CDA Query
+        cda_query: 
+            content_type: asset

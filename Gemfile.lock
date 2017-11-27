@@ -236,6 +236,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  contentful
   github-pages
   jekyll-contentful-data-import
   rake
