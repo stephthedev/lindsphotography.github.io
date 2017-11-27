@@ -64,6 +64,6 @@ namespace :contentful do
     }
   end
 
-  desc 'Generate blog post content, image content'
+  desc "Generate blog post content, image content"
   task :all => ["contentful:content", "contentful:process_posts", "contentful:assets"]
 end
