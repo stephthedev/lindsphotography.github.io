@@ -1,6 +1,6 @@
 # lindsphotography.github.io
 
-Personal website of Lindsay Garcia (created by [Stephanie Ortiz](http://stephthedev.com/))
+[Personal website](http://lindsaygarciaphotography.com/) of Lindsay Garcia (created by [Stephanie Ortiz](http://stephthedev.com/))
 
 ## Prerequisites
 1. `bundle install`
