@@ -10,4 +10,6 @@
 2. `open http://localhost:4000`
 
 ## Load contentful data
+1. `export CONTENTFUL_SPACE_ID=<some value from contentful>`
+2. `export CONTENTFUL_ACCESS_TOKEN=<some value from contentful>`
 1. `bundle exec rake contentful:all`
